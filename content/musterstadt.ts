@@ -8,7 +8,7 @@ export const gemeinde = {
     name: "Max Mustermann",
     partei: "—",
   },
-  logoSrc: "",
+  logoSrc: "/images/logos/wappen-musterstadt.webp",
   accentColor: "#C9322B",
   accentWarm: "#F4A623",
 } as const;
