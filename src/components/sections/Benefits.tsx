@@ -220,6 +220,23 @@ function Finanzierung() {
         </div>
       </div>
 
+      {/* Demo-Hinweis an der Stelle des früheren „store and more“-PDF-Embeds:
+          das echte Konzept-PDF existiert in der Demo nicht. */}
+      <div className="mt-12 flex items-start gap-4 p-6 rounded-xl border border-dashed border-border bg-bg-soft/50">
+        <FileText
+          className="w-5 h-5 flex-shrink-0 mt-0.5 text-fg-muted"
+          strokeWidth={1.5}
+        />
+        <div>
+          <p className="text-xs uppercase tracking-[0.15em] text-fg-muted mb-2">
+            store and more — Finanzierungskonzept
+          </p>
+          <p className="text-sm text-fg-muted leading-relaxed">
+            In der finalen Version ist hier das vollständige Konzept als PDF
+            eingebettet.
+          </p>
+        </div>
+      </div>
     </BenefitCard>
   );
 }
