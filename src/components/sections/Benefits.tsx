@@ -185,7 +185,7 @@ function Finanzierung() {
         ))}
       </div>
       <p className="text-xs text-fg-muted mb-10 -mt-6">
-        Eckdaten aus der Wirtschaftlichkeitsberechnung (Phase 1 · 190,8 kWp) ·
+        Eckdaten aus der Wirtschaftlichkeitsberechnung (Phase 1 · 135 kWp) ·
         Consulting Gassner
       </p>
 
