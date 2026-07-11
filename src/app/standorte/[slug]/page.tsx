@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, Battery, ShieldCheck } from "lucide-react";
-import { standorte, phasen } from "../../../../content/boeheimkirchen";
+import { standorte, phasen } from "../../../../content/musterstadt";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 
 // Nur Standorte mit konkreten Kennzahlen bekommen eine Detailseite.

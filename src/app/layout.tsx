@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Energiekonzept Böheimkirchen — Consulting Gassner",
+  title: "Energiekonzept Musterstadt — Consulting Gassner",
   description:
-    "Wirtschaftlich optimale, förderfähige Energielösung für die Marktgemeinde Böheimkirchen. Erarbeitet von Consulting Gassner.",
+    "Musterdarstellung: Wirtschaftlich optimale, förderfähige Energielösung für eine Beispielgemeinde. Erarbeitet von Consulting Gassner.",
 };
 
 export default function RootLayout({

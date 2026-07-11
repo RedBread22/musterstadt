@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Battery, ChevronDown, ShieldCheck } from "lucide-react";
-import { standorte, phasen, type Standort } from "../../../content/boeheimkirchen";
+import { standorte, phasen, type Standort } from "../../../content/musterstadt";
 import { SectionWrapper } from "../ui/SectionWrapper";
 import { ImagePlaceholder } from "../ui/ImagePlaceholder";
 

@@ -2,7 +2,7 @@
 
 import { Layers, Network, Battery, Zap, Shield, TrendingDown } from "lucide-react";
 import { motion } from "framer-motion";
-import { konzeptZiele } from "../../../content/boeheimkirchen";
+import { konzeptZiele } from "../../../content/musterstadt";
 import { SectionWrapper } from "../ui/SectionWrapper";
 
 const icons = [Layers, Network, Zap, Battery, Shield, TrendingDown];

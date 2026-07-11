@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Phone, Mail, Globe, MapPin } from "lucide-react";
-import { kontakt, kontaktPartner } from "../../../content/boeheimkirchen";
+import { kontakt, kontaktPartner } from "../../../content/musterstadt";
 import { SectionWrapper } from "../ui/SectionWrapper";
 
 export function Kontakt() {

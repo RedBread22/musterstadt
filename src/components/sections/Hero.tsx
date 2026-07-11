@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
-import { gemeinde } from "../../../content/boeheimkirchen";
+import { gemeinde } from "../../../content/musterstadt";
+import { ImagePlaceholder } from "../ui/ImagePlaceholder";
 
 export function Hero() {
   return (
@@ -16,16 +17,18 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="mb-8">
-              <Image
-                src={gemeinde.logoSrc}
-                alt={`Logo ${gemeinde.name}`}
-                width={80}
-                height={80}
-                priority
-                className="h-20 w-auto"
-              />
-            </div>
+            {gemeinde.logoSrc && (
+              <div className="mb-8">
+                <Image
+                  src={gemeinde.logoSrc}
+                  alt={`Logo ${gemeinde.name}`}
+                  width={80}
+                  height={80}
+                  priority
+                  className="h-20 w-auto"
+                />
+              </div>
+            )}
 
             <h1 className="font-serif text-5xl md:text-7xl lg:text-[80px] leading-[1.05] tracking-tight">
               Energiekonzept
@@ -45,14 +48,7 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <Image
-              src="/images/logos/wappen-boeheimkirchen.webp"
-              alt={`Wappen ${gemeinde.name}`}
-              width={288}
-              height={288}
-              priority
-              className="w-full h-auto mx-auto"
-            />
+            <ImagePlaceholder label={`Wappen ${gemeinde.shortName}`} ratio="1/1" />
           </motion.div>
         </div>
       </div>
