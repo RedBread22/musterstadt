@@ -17,19 +17,6 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            {gemeinde.logoSrc && (
-              <div className="mb-8">
-                <Image
-                  src={gemeinde.logoSrc}
-                  alt={`Logo ${gemeinde.name}`}
-                  width={80}
-                  height={80}
-                  priority
-                  className="h-20 w-auto"
-                />
-              </div>
-            )}
-
             <h1 className="font-serif text-5xl md:text-7xl lg:text-[80px] leading-[1.05] tracking-tight">
               Energiekonzept
               <br />
@@ -48,7 +35,19 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <ImagePlaceholder label={`Wappen ${gemeinde.shortName}`} ratio="1/1" />
+            {gemeinde.logoSrc ? (
+              <Image
+                src={gemeinde.logoSrc}
+                alt={`Wappen ${gemeinde.shortName}`}
+                width={600}
+                height={720}
+                priority
+                unoptimized={true}
+                className="w-full h-auto"
+              />
+            ) : (
+              <ImagePlaceholder label={`Wappen ${gemeinde.shortName}`} ratio="1/1" />
+            )}
           </motion.div>
         </div>
       </div>
