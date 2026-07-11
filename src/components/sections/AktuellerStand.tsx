@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { aktuellerStand } from "../../../content/boeheimkirchen";
+import { aktuellerStand, gemeinde } from "../../../content/musterstadt";
 import { SectionWrapper } from "../ui/SectionWrapper";
 import { KpiNumber } from "../ui/KpiNumber";
 import { PieChartDisplay } from "../ui/PieChartVorherNachher";
@@ -28,7 +28,7 @@ export function AktuellerStand() {
   return (
     <SectionWrapper id="aktueller-stand">
       <h2 className="font-serif text-4xl md:text-5xl tracking-tight mb-16">
-        Wo Böheimkirchen heute steht
+        Wo {gemeinde.shortName} heute steht
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 lg:gap-x-20 gap-y-12 items-start mb-12">

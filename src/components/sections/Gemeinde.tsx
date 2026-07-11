@@ -10,7 +10,7 @@ import {
   Vote,
   type LucideIcon,
 } from "lucide-react";
-import { gemeinde, gemeindeFakten } from "../../../content/boeheimkirchen";
+import { gemeinde, gemeindeFakten } from "../../../content/musterstadt";
 import { SectionWrapper } from "../ui/SectionWrapper";
 
 const faktenIcons: Record<string, LucideIcon> = {

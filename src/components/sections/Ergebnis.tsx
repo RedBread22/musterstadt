@@ -5,7 +5,7 @@ import {
   aktuellerStand,
   ergebnis,
   wirtschaftlichkeit,
-} from "../../../content/boeheimkirchen";
+} from "../../../content/musterstadt";
 import { SectionWrapper } from "../ui/SectionWrapper";
 import { PieChartDisplay } from "../ui/PieChartVorherNachher";
 
