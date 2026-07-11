@@ -105,6 +105,10 @@ export type Standort = {
   bildPlatzhalter?: string;
   bildSrc?: string;
   pdf?: string;
+  // Standorte, die im Original eine technische Detail-PDF hatten: statt eines
+  // echten Downloads rendert die Detailseite einen dezenten Hinweis, dass in
+  // der finalen Version hier eine PDF steht.
+  pdfHinweis?: boolean;
   // Reine Kennzahlen-Karte ohne Bild/PDF/Detailseite (z. B. ein Speichersystem
   // ohne eigene PV-Fläche).
   metaOnly?: boolean;
@@ -127,6 +131,8 @@ export const standorte: Standort[] = [
     beschreibung:
       "Überdachung des Mittelschul-Parkplatzes als Carport-Konstruktion mit integrierter Photovoltaik. Doppelter Nutzen: Wetterschutz für die Fahrzeuge und Stromerzeugung über die Mittagsspitze. Mit zwei 22-kW-Ladepunkten direkt am Standort.",
     bildPlatzhalter: "Parkplatz Mittelschule – Carport mit PV",
+    bildSrc: "/images/standorte/parkplatz-mittelschule.webp",
+    pdfHinweis: true,
   },
   {
     slug: "mittelschule",
@@ -141,6 +147,8 @@ export const standorte: Standort[] = [
     beschreibung:
       "Aufdach-Anlage auf dem Eternitdach der Mittelschule inklusive Batteriespeicher und Notstromsystem. Die Schule wird damit blackoutfähig — kritischer Standort als möglicher Notunterstands-Punkt für die Gemeinde.",
     bildPlatzhalter: "Mittelschule – Aufdach-Anlage",
+    bildSrc: "/images/standorte/mittelschule.webp",
+    pdfHinweis: true,
   },
   {
     slug: "sportplatz",
@@ -154,6 +162,8 @@ export const standorte: Standort[] = [
     beschreibung:
       "Flachdach-Anlage auf der Sportplatz-Tribüne mit Batteriespeicher zur Lastverschiebung in die Abendstunden (Flutlichtbetrieb). Ergänzt um einen 22-kW-Ladepunkt.",
     bildPlatzhalter: "Sportplatz – Flachdach-PV",
+    bildSrc: "/images/standorte/sportplatz-tribuene.webp",
+    pdfHinweis: true,
   },
   {
     // Reine Speicher-/Notstromposition ohne eigene PV-Fläche — daher kein
@@ -178,6 +188,8 @@ export const standorte: Standort[] = [
     beschreibung:
       "Größter Einzelstandort des Konzepts. Carport-Anlage am Bahnhof-Parkplatz mit hohem Eigennutzungspotenzial durch die geplanten Ladestationen direkt am Standort.",
     bildPlatzhalter: "Parkplatz Bahnhof – Carport-PV",
+    bildSrc: "/images/standorte/parkplatz-bahnhof.webp",
+    pdfHinweis: true,
   },
   {
     slug: "parkplatz-ortszentrum",
@@ -190,6 +202,8 @@ export const standorte: Standort[] = [
     beschreibung:
       "Carport-Anlage am Parkplatz im Ortszentrum mit Schnelllade-Infrastruktur (100 kW) und einem zusätzlichen 22-kW-Ladepunkt — hohe Sichtbarkeit und starkes Eigennutzungspotenzial.",
     bildPlatzhalter: "Parkplatz Ortszentrum – Carport-PV",
+    bildSrc: "/images/standorte/parkplatz-ortszentrum.webp",
+    pdfHinweis: true,
   },
 
   // ── PHASE 3 — Mittelfristige Ausbauprojekte (2027–2028) ─────────────────
@@ -205,6 +219,8 @@ export const standorte: Standort[] = [
     beschreibung:
       "PV-Anlage auf dem Blechfalzdach des Kindergartens Nord inklusive Batteriespeicher für eine hohe Eigenversorgung über den Tag.",
     bildPlatzhalter: "Kindergarten Nord – Aufdach",
+    bildSrc: "/images/standorte/kindergarten-nord.webp",
+    pdfHinweis: true,
   },
   {
     slug: "bauhof",
@@ -218,6 +234,8 @@ export const standorte: Standort[] = [
     beschreibung:
       "Flachdach-Anlage (Kiesdach) auf dem Bauhof mit Batteriespeicher — deckt den Eigenbedarf der gemeindeeigenen Fahrzeuge und Geräte.",
     bildPlatzhalter: "Bauhof – Flachdach-PV",
+    bildSrc: "/images/standorte/bauhof.webp",
+    pdfHinweis: true,
   },
   {
     slug: "polizei",
@@ -231,6 +249,7 @@ export const standorte: Standort[] = [
     beschreibung:
       "Bestandsgebäude — Ergänzung um Batteriespeicher und Notstromsystem. Macht den Polizeistandort blackoutfähig, ohne neue PV-Fläche.",
     bildPlatzhalter: "Polizei – Speicher & Notstrom",
+    bildSrc: "/images/standorte/polizei.webp",
   },
 
   // ── PHASE 4 — Langfristige Infrastrukturprojekte ────────────────────────
@@ -246,6 +265,7 @@ export const standorte: Standort[] = [
     beschreibung:
       "Gebäudeintegriertes Indachsystem mit 330-W-Modulen — die Module ersetzen Teile der Dacheindeckung und fügen sich optisch in das Gebäudebild ein.",
     bildPlatzhalter: "Posthaus – Indachsystem",
+    pdfHinweis: true,
   },
   {
     slug: "volksschule",

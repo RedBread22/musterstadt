@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Battery, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Battery, FileText, ShieldCheck } from "lucide-react";
 import { standorte, phasen } from "../../../../content/musterstadt";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 
@@ -166,6 +166,26 @@ export default function StandortDetail({ params }: Props) {
                 PDF in neuem Tab öffnen
               </a>
             </p>
+          </div>
+        )}
+
+        {/* Demo-Hinweis an der Stelle des früheren PDF-Embeds: die echte
+            Detail-PDF existiert in der Demo nicht. */}
+        {standort.pdfHinweis && !standort.pdf && (
+          <div className="mt-12 flex items-start gap-4 p-6 border border-dashed border-border bg-bg-soft/50">
+            <FileText
+              className="w-5 h-5 flex-shrink-0 mt-0.5 text-fg-muted"
+              strokeWidth={1.5}
+            />
+            <div>
+              <p className="text-xs uppercase tracking-[0.15em] text-fg-muted mb-2">
+                Detail-PDF
+              </p>
+              <p className="text-sm text-fg-muted leading-relaxed">
+                In der finalen Version steht hier eine PDF mit der genauen
+                technischen und wirtschaftlichen Aufgliederung dieses Standorts.
+              </p>
+            </div>
           </div>
         )}
 
