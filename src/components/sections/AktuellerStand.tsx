@@ -67,7 +67,7 @@ export function AktuellerStand() {
             className={`w-4 h-4 transition-transform ${showRechenweg ? "rotate-180" : ""}`}
             strokeWidth={1.5}
           />
-          Rechenweg: Wie setzen sich die 19,08 ct/kWh zusammen?
+          Rechenweg: Wie setzen sich die 19,0 ct/kWh zusammen?
         </button>
 
         {showRechenweg && (
