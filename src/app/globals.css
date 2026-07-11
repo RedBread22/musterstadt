@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FFFFFF;
+  --color-bg-soft: #F7F7F5;
+  --color-fg: #111111;
+  --color-fg-muted: #6B6B6B;
+  --color-border: #E5E5E5;
+  --color-accent: #C9322B;
+  --color-accent-warm: #F4A623;
+  --color-accent-soft: #FFF4EC;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  color: var(--color-fg);
+  background: var(--color-bg);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+::selection {
+  background-color: var(--color-accent-soft);
+  color: var(--color-fg);
+}
