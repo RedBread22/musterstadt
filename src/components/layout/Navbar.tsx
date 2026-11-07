@@ -26,6 +26,8 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-bg/90 backdrop-blur-md border-b border-border">
       <div className="max-w-content mx-auto px-6 flex items-center justify-between h-16">
+        {/* Bewusst <a> statt <Link>: Verhalten wie vor dem Next-16-Update beibehalten. */}
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <a href="/" className="font-serif text-lg tracking-tight">
           Energiekonzept
         </a>

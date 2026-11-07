@@ -16,15 +16,16 @@ export function generateStaticParams() {
 }
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 function formatNumber(n: number): string {
   return n.toLocaleString("de-AT");
 }
 
-export default function StandortDetail({ params }: Props) {
-  const standort = standorte.find((s) => s.slug === params.slug);
+export default async function StandortDetail({ params }: Props) {
+  const { slug } = await params;
+  const standort = standorte.find((s) => s.slug === slug);
 
   if (!standort || !hatDaten(standort)) {
     notFound();
